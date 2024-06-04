@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Market Data</title>
+    <link rel="stylesheet" href="style.css"> </head>
+</head>
+<body>
+    <header class="header">
+        <h1>Cryptocurrency Market Data</h1>
+        <div class="search-sort-container">
+            <input type="text" id="searchInput" placeholder="Search by name or symbol">
+            <button class="sort-button">Sort by:
+                <select id="sortSelect">
+                    <option value="market_cap_desc">Market Cap (Desc)</option>
+                    <option value="price_change_percentage_24h">% Change (24h)</option>
+                </select>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <table id="cryptoData">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Image</th>
+                    <th>Current Price (USD)</th>
+                    <th>Market Cap (USD)</th>
+                    <th>24h Change (%)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
